@@ -1,35 +1,65 @@
+/*
+  Box Model:
+  -solo funciona en elementos 
+     display:block; 
+  - div la tiene por defecto
+  -comportamiento por defectol:
+     - ocupa todo el ancho de pantalla
+  - funciona si:
+     -los ementos tienen contenido 
+     o tienen un tamaño definido 
+  -Margin:
+     -Deterima el espacio entre los elementos
+     - solo aplica a elementos display block
+     - Computado de margenes
+     - Colapso de margenes
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 .box{
-  border-top-color: rgb(243, 105, 169);
-  border-top-style: groove;
-  border-top-width: 10px;
+    border-top-color: rgb(206, 81, 154);
+    border-top-style: dashed;
+    border-top-width: 10px;
+    border-right-color:rgb(0, 51, 128);
+    border-right-style:  dotted;
+    border-right-width: 8px ;
+    border-left-color:  rgb(100, 15, 236);
+    border-left-style: double;
+    border-left-width:  10px;
+    border-bottom-color:  rgb(251, 173, 190);
+    border-bottom-style: groove;
+    border-bottom-width:  10px;
 
-  border-right-color: rgb(185, 123, 243);
-  border-right-style: dashed;
-  border-right-width: 5px;
 
-  border-bottom-color: rgb(130, 112, 230);
-  border-bottom-style: dotted;
-  border-bottom-width: 15px;
-
-  border-left-color: rgb(106, 181, 252);
-  border-left-style: solid;
-  border-left-width: 2px;
+}
     
-}
-
-
+    
 .box1{
-    background-color: rgb(235, 224, 236);
-    display: block;
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 40px;
-}
-.box2{
-    background-color: #c1b7ff;
+    margin: 20px 40px ;
+    background: rgb(209, 109, 209);
+    padding: 50px  45px 3px ;
     display: block;
     height: 200px;
-    padding: 2px 4px 6px 8px;
+    width: 300px;
+    box-sizing: border-box;
+    overflow: scroll;
+    border-radius: 10px;
+  
+}
+.box2{
+    background: rgb(43, 54, 212);
+    display: block;
+    height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    margin-top: 100px;
+    border-radius: 50%;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+
 }
